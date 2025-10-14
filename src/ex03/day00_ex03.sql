@@ -1,4 +1,3 @@
-SELECT name || ' (age:' || age || ',gender:'''||gender||''',address:'''|| address || ''')'  AS person_information
-FROM person
-ORDER BY person_information ASC;
-
+SELECT DISTINCT id  FROM person_visits
+WHERE (visit_date >= '2022-01-06' AND  visit_date <= '2022-01-09') OR pizzeria_id = 2
+ORDER BY id DESC;
